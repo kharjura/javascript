@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let data = [
+        { id: 1, name: "Neeti", age: 25 },
+        { id: 2, name: "Smruti", age: 30 },
+        { id: 3, name: "Kruti", age: 35 },
+        { id: 4, name: "Swati", age: 15 },
+        { id: 5, name: "sukruti", age: 25 },
+        { id: 6, name: "Spoorti", age: 25 },
+      ];
+      function check(obj){
+        return obj.age>=18;
+      }
+      let filteredArr= data.filter(check);
+      console.log(filteredArr);
+    </script>
+</body>
+</html>
