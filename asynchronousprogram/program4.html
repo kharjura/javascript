@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>call backs in js </h1>
+    <script>
+        function sindhu(callback){
+            document.write("i am sindhu,string to call other person");
+            callback();
+        }
+        function friend1(){
+            document.write("i am vishal,i am called by sindhu");
+
+        }
+        function friend2(){
+            document.write("i am harshi,i am called sindhu");
+        }
+        let input=window.prompt("choose bw 1 and 2");
+        if(input==1){
+            sindhu(friend1);
+        }
+        else if(input==2){
+            sindhu(friend2)
+        }
+        
+        //a function being passed as a parameter to another function is called callback
+        // if we are not sure abt which function to call so that time we make use of parameters to send 
+        // when they  r tightly coupled but that func we are not able to control 
+        // when two or more functions are called internally then that time we need callbacks
+        // HOF FUNCTION(CALLBACK )
+    </script>
+</body>
+</html>

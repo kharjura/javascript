@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let myvar;
+        function printName(value){
+            document.write("print the name in sometime")
+            setTimeout(()=>{
+               myvar=value;
+            },2000);
+        }
+        function dosomething(){
+            document.write('the givedn name is :' ,{myvar});
+        }
+        printName("sudeepthi");
+        dosomething();
+    </script>
+</body>
+</html>

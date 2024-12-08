@@ -1,0 +1,46 @@
+<!--simulate a js function to assign values
+to user objects and display the given inputs-->
+<!--
+setusers() === assign values to user object where user object takes userid,username
+let user = {
+userId: 1,
+username: "john"
+}
+
+setusers() is asynchronous in nature
+
+fetchusers() === capture the details after the setusers has finished assigning values 
+after capturing it will display the user details
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Simuation of set() and get()</h1>
+    <script>
+        function setusers(id, name, callback) {
+            setTimeout(() => {
+                let userobj = {
+                    userId: id,
+                    userName:name,
+                };
+                callback(userobj);
+            },2000);
+        }
+
+        function fetchusers(userobj) {
+            console.log(userobj.userId);
+            console.log(userobj.userName);
+        }
+        let id = window.prompt("Enter userId");
+        let name = window.prompt("Enter user name");
+        setusers(id, name, fetchusers);
+    </script>
+</body>
+</html>

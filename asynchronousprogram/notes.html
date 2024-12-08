@@ -1,0 +1,38 @@
+<!--Asynchronous programming in js
+1)Asynchronous programming allows us to handle tasks that date time
+  ex: Fectching data from an external source
+2)Execution happens without blocking the execution of that time taken code
+3)js is single threaded meaning it can process only one operation at a time,with asynchronous
+programe we can perform non locking tasks to keep the application responsive
+  eg:a)order pizza
+  b) call Friend
+  CORE CONCEPTS OF ASYNCHRONOUS PROGRAMMING:
+  1)callbacks:
+    a)callbacks are functions passed as arguements to other functions, once Asynchronous execution is 
+      complete the callbacks will be executer
+    b)callbacks can become complex an become hard to manage leading to callback hell
+   2)Promise:
+   a)promise represent the eventual result of an asynchronous operation
+   b)these make it easier to handle callback hell
+   3)Async/Await:
+   a)It is built on promises, makes the syntax look simple
+   b)It makes an asynchronous code look aynchronous   -->
+   callback function:
+   *function which are past on as parameter to another function is called as callback function
+   *the function which accept the callback function is called as higher order function(HOF)
+   Nested callback:
+   *callback which are Nested one within the other leads to Nested Callbacks
+   *depely Nested callbacks lead to callbackhell
+   *callback hell is a phenomenon where multiple callbacks are depely Nested & read ability &
+     understand ability of code decreases trastically
+     * It leads to parameter like structure known as peramid of dom
+     syntax:
+            function(() => <
+            () => <
+            () => <
+            () => <
+            > }}});
+    Advantages of callbacks:
+    *It can be used to handle Asynchronous Function where the result of 1. function is depended on another
+    Disadvantages:
+    *It leads to multiple callback to hell. 
