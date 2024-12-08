@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>promises in javascript</h1>
+    <script> 
+        // create a new promise
+        function Sindhu(stuReq) {
+            return new Promise(function (res, rej) {
+                setTimeout(() => {
+                    res(stuReq);
+                },2000);
+            });
+        }
+
+        function success(stuReq) {
+            console.log(stuReq + "was settled by Sindhu");
+        }
+        function failure(stuReq) {
+            console.log(stuReq + "was setteled by Sindhu");
+        }
+        let students = Sindhu(100);
+        students.then(success).catch(failure);
+    </script>
+</body>
+</html>

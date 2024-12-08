@@ -1,0 +1,30 @@
+<!--
+Promises in javaScript:
+1)promises are object that represent the eventual complition or failure of an Asynchronous
+operation and it's resulting value.
+2)They help in handling Asynchronous code more cleanly lay avoiding callback hell.
+It makes the code look more readable and organized
+-->
+<!--Key Concept in Promise:
+1)State of the Promise:
+     A promise object has three states
+a) pending:
+     It is the enitial state where the promise hasn't been fullfilled or rejected yet
+b) fullfilled:
+    The asynchronous operation is completed Successfully and a value is returned
+c) Rejected:
+     The operation has failed to return a value and an error is thrown
+2) Promise Creation:
+      promise is created using promise constructor which takes of a function parameter.
+      The function takes two parameters resolve & reject which controls the fullfillment
+      or rejection & of the promise
+3) using Then,Catch&finally
+     *  when the promise is fullfill the Then function is called which takes the resolved value.
+     *when the promise is rejected catch function(block) is called which handles errors
+        finally block is called regardless of the promise fullfill or not
+4) promise chain is possible making it easier to handle multiple asynchronous operation-->
+<!-- Benefits of promises:
+ a) makes asynchronous code easier to read
+ b) errors are handled in a more readable manner
+ c) makes asynchronous flows more managable using promise chain
+ d) promises form basis of Async/await.-->
