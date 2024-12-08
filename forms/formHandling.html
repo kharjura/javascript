@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      form {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: lightblue;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      label,
+      input {
+        padding: 5px;
+        margin: 5px;
+        border-radius: 5px;
+        border: none;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <label for="firstname">firstName</label>
+      <input type="text" name="firstname" id="firstName" />
+      <label for="lastname">lastname</label>
+      <input type="text" name="lastname" id="lastname" />
+      <label for="contact">contact</label>
+      <input type="text" name="contact" id="contact" />
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" />
+      <div>
+        <label for="gender">gender</label>
+        <input type="radio" name="gender" id="male" value="male" />
+        <label for="male">male</label>
+        <input type="radio" name="gender" id="female" value="female" />
+        <label for="female">female</label>
+      </div>
+      <input type="submit" onclick="handleSubmit()" />
+      <p id="details"></p>
+    </form>
+    <script src="./formHandling.js"></script>
+  </body>
+</html>
