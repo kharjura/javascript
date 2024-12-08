@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JSON: JavaScript object Notation</h1>
+    <p>It is a string representation of an object</p>
+    <script>
+        let jsonString = '{"name":"john","age":30, "country":"India"}';
+        // convert jsonString into an object
+        let userobject = JSON.parse(jsonString);
+        console.log(userobject); //jsonString is converted into an object
+
+        let user = {
+            name: "John",
+            age:30,
+            country:"India",
+        };
+        //convert the user object into json String
+        let userJsonString = JSON.stringify(user);
+        document.write(userJsonString);
+        console.log(userJsonString);
+    </script>
+</body>
+</html>
+<!--
+JSON:
+1)It stands for Javascript object Notation
+2)It is String representation of a javascript object
+3)Objects need to be converted into String because object can not be transfered from one end point
+to another end point directly over API only string can be transfer
+ Hence for it is necessary to convert object to JSON String
+4)To convert object into JSON string use JSON.stringify[];
+5)To Convert JSON String into Object use JSON.parse(JsonString);
+ -->

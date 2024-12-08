@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Array destructing</h1>
+   <p>Process of dividing the array into its constituent elements</p>
+   <script>
+    //define an array
+    let fruits = ["Apple", "Banana","Grapes","Blackberry"];
+    // use array destructing to assign values to variables
+    let [f1, f2, f3, f4] = fruits;
+    document.write("using index value: " + fruits[2] + "<br>");
+    document.write("using destructered variable" + f3 + "<br>");
+
+    //use rest operator
+    fruits = [
+        "Apple",
+        "Banana",
+        "Grapes",
+        "Blackberry",
+        "Watermelon",
+        "ButterFruit",
+        "muskmelon",
+    ];
+    let [fruit1,fruit2,fruit3,...restofFruits] = fruits;
+    document.write(fruit3 + "<br>");
+    document.write("rest of the fruits: " + restofFruits + "<br>");
+    console.log(restofFruits); //typeof restoffruits is array()
+   </script> 
+</body>
+</html>
+<!--
+Rest and Spread operator:
+1)This operators are used for array This restructing (construction)
+2)Rest operators are used to break down the array elements into it's constituent path
+3)spread operators are used to merge to different arrays and are allways written on the
+RIGHT HAND SIDE of the equal sign
+
+Let arr=["Apple","Banana","Grapes","oranges"]
+array Destructing:-
+Let[a,b,c,d] = arr
+a -> Apple
+b-> Banana
+c->Grapes
+d-> oranges
+arr[3]*
+c.log(d)
+eg: Rest operator
+                on LHS of=
+    arr=["Apple","Banana","Grapes","oranges","Black berry","Muskmelon"]
+    Let[a,b,c,d]=arr
+    Let[a,b,c,...d]=arr
+    a-> apple
+    b->Banana
+    c->Grapes
+    d->[oranges,Blackberry]-->
