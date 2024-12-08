@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1" style="background-color: yellow; padding: 5px;">
+        <h1>This is h1 inside div</h1>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+             Cum labore consequatur molestias tempore omnis. 
+             Temporibus nesciunt aliquam mollitia quidem, molestias, cupiditate alias 
+             dignissimos earum illo provident, nulla quos itaque. Nemo!
+        </p>
+    </div> <!--//#div1-->
+    <!-------------------------------------------------------->
+    <div id="my_div">
+    <script>
+        //capture the element div with id my_div
+        let my_div = document.getElementById("my_div");
+        // change the background of my_div
+        my_div.style.backgroundColor = "blue";
+        my_div.style.padding = "5px";
+        let h1Ele = document.createElement("h1");
+        let pEle = document.createElement("p");
+        h1Ele.textContent = "This is h1 inside a div";
+        pEle.textContent = ` Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+             Cum labore consequatur molestias tempore omnis. 
+             Temporibus nesciunt aliquam mollitia quidem, molestias, cupiditate alias 
+             dignissimos earum illo provident, nulla quos itaque. Nemo!`;
+             my_div.appendChild(h1Ele);//append h1elem as child
+             my_div.appendChild(pEle); //append pEle as child
+    </script>
+    </div>
+</body>
+</html>
+<!--create a javaScript function to display details of users: username emailid contact
+//create 3 rows and add random data for the users and display of the output-->

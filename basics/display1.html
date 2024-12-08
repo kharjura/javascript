@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Given an object in Javascript, display the document
+    </h1>
+    <script>
+        // JavaScript object
+        let my_obj = {
+            name: "john",
+            age: 30,
+            city: "New York",
+            profession: "SDE",
+            address: "street 1",
+            contact: 1234567,
+            email: "john@gmail.com",
+            parentcontact: 456789123,
+        };
+        // Iterate through the object
+        for (let key in my_obj) {
+            // Create a new h3 element
+            let new_h3 = document.createElement("h3");
+            new_h3.innerHTML = `${key} is: ${my_obj[key]}`; // Corrected string interpolation
+            document.body.appendChild(new_h3);
+        }
+    </script>
+</body>
+</html>
+<!-- chatgpt:
+This JavaScript code iterates over all properties of an object, my_obj, 
+and dynamically creates an HTML <h3> element for each property, displaying its key and value.
+     Here’s a breakdown:
+
+Loop: for (let key in my_obj) iterates through each key (property name)
+ in my_obj. The for...in loop is specifically for enumerating object properties.
+
+Create Element: Inside the loop, it creates a new <h3> element with
+     let new_h3 = document.createElement("h3");. This is a DOM element for displaying
+      each key-value pair.
+
+Set Content: The line new_h3.innerHTML = ${key} is: ${my_obj[key]};
+ uses template literals to set the inner HTML of <h3>. It fills in each property’s key and value,
+     formatted as "key is: value".
+
+Append to Document: document.body.appendChild(new_h3); appends each <h3>
+     element to the body of the HTML document, making it visible on the page.
+
+Example
+If my_obj = { name: "Alice", age: 30 };, the output on the page would be:
+
+html
+Copy code
+<h3>name is: Alice</h3>
+<h3>age is: 30</h3>
+This code creates a new <h3> element for each property in my_obj, 
+    which then displays on the webpage under the body.-->

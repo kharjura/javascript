@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Document Object Moduel</h1>
+    <p>
+        1.Represents the current working html document</br>
+        2.provides methods and properties to access and modify the document</br>
+        3.can communicate with the current html document</br>
+        4.it is a subset of the window object
+    </p>
+<script>
+    //create a new document object
+    console.log(window.document);
+
+    let h3 = document.createElement("h3");
+    h3.innerHTML = "Iam an element added by Javascript";
+    document.body.appendChild(h3);
+</script>
+</body>
+</html>
+<!--
+DOM:Document object model
+provide the document  object which represent the current working html document.
+functions to interact and modify the html
+document..createElement()etc...
+-->

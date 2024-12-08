@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>javascript objects</h1>
+    <script>
+        //define a new object
+        let person = {
+            name: "Goku",
+            age:25,
+            superpower: "super sayian",
+            planet: "unknown",
+        };
+        //using . notation:obj_name.attribute_name
+        document.write("person name:" + person.name +"<br>");
+        document.write("person age:" + person.age +"<br>");
+        document.write("person superpower:" + person.superpower +"<br>");
+        document.write("person planet:" + person.planet +"<br>");
+        document.write("------------"+ "<br>");
+        //using [] notation:obj_name["attribute"]
+        document.write("person name:" + person["name"] +"<br>");
+        document.write("person age:" + person["age"] +"<br>");
+        document.write("person superpower:" + person["superpower"] +"<br>");
+        document.write("person planet:" + person["planet"] +"<br>");
+        document.write("-----------------" +"<br>");
+        //using a loop to access attributes for ...inloop
+        for (let key in person) {
+            document.write(person[key] +"<br>");
+        }
+    </script>
+</body>
+</html>
+<!--OBJECT
+*It they are used to store multiple data within the single variable
+* The behave has real time entities
+i.e, they occupaid memory
+* wais to create object
+object literal
+let my_obj= {
+key:value,
+key:value
+}
+*using new keyword
+*using object control
+* to acess indivisiual value we use .notation(or) []notation
+* object: a variable which can store multiple values
+(properties/attributes) stored in form of (key:value) pair-->
