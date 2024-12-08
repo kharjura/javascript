@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: lightblue;
+            padding: 20px;
+        }
+        label,
+        input,
+        option {
+            padding: 5px;
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="handleSubmit(event)">
+    <h1>My calculator</h1>
+    <form>
+        <lable for="input1">Number 1</lable>
+        <input type="number" id="input1" name="input1" />
+        <lable for="input2">Number 2</lable>
+        <input type="number" id="input2" name="input2" />
+        <label for="operation" id="operation">choose:</label>
+        <select name="operation" id="operation">
+            <option value="add">Add</option>
+            <option value="sub">sub</option>
+            <option value="division">Devision</option>
+            <option value="multiplication">multiplication</option>
+        </select>
+        <h4>Answer is:<span id="ans"></span></h4>
+        <input type="submit" value="calculate"/>
+    </form>
+    <script src="./calculator.js"></script>
+</body>
+</html>
